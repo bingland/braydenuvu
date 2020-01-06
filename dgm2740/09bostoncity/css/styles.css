@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans', sans-serif; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+header {
+  padding: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header.jpg");
+  color: white; }
+  header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px; }
+  header h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px; }
+
+nav {
+  background: linear-gradient(142deg, #040047 0%, #090979 35%, #0015cb 100%);
+  color: white; }
+  nav ul {
+    display: none; }
+    nav ul li {
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold; }
+  nav svg {
+    fill: white;
+    width: 50px; }
+
+.my_slider {
+  padding-bottom: 20px; }
+  .my_slider div {
+    position: relative; }
+    .my_slider div img {
+      width: 100%; }
+    .my_slider div .captionText {
+      background-color: rgba(192, 192, 192, 0.432);
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      color: white; }
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px; }
+
+.panelSection {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  text-align: center; }
+  .panelSection div:nth-child(1) a {
+    background: #3055b4; }
+  .panelSection div:nth-child(2) a {
+    background: #65D930; }
+  .panelSection div:nth-child(3) a {
+    background: #F2AB27; }
+  .panelSection div:nth-child(4) a {
+    background: #BF2C1F; }
+  .panelSection div:nth-child(1) {
+    background-image: url("../img/panel1.jpg"); }
+  .panelSection div:nth-child(2) {
+    background-image: url("../img/panel2.jpg"); }
+  .panelSection div:nth-child(3) {
+    background-image: url("../img/panel3.jpg"); }
+  .panelSection div:nth-child(4) {
+    background-image: url("../img/panel4.jpg"); }
+  .panelSection div a {
+    color: black;
+    display: block;
+    width: 100%;
+    height: 250px;
+    text-decoration: none;
+    padding: 0 2%;
+    transition: all .5s ease-in;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    .panelSection div a svg {
+      width: 100%;
+      max-width: 100px;
+      max-height: 100px;
+      fill: white; }
+    .panelSection div a h3 {
+      padding-top: 20px;
+      color: white; }
+  .panelSection div a:hover {
+    background: none;
+    text-shadow: 0 0 4px black; }
+
+footer {
+  margin-top: 30px;
+  text-align: center; }
+  footer p {
+    padding: 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #3055b4; }
+
+@media only screen and (min-width: 30rem) {
+  nav {
+    background-color: #3055b4;
+    color: white; }
+    nav ul {
+      display: flex; }
+      nav ul li {
+        font-size: 16px; }
+    nav svg {
+      display: none; }
+
+  .panelSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+@media only screen and (min-width: 46.875rem) {
+  .panelSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+
+  nav ul {
+    display: flex; }
+    nav ul li {
+      font-size: 20px; }
+  nav svg {
+    display: none; } }
+
+/*# sourceMappingURL=styles.css.map */

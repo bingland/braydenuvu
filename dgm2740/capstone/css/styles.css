@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.1; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 15px; }
+
+header {
+  display: relative; }
+  header .mainBar {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    color: #202020;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 8px #000000ad; }
+    header .mainBar img {
+      width: 70px;
+      padding: 5px;
+      padding-left: 20px; }
+    header .mainBar nav {
+      text-align: right;
+      padding-right: 20px;
+      display: none; }
+      header .mainBar nav ul {
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%; }
+        header .mainBar nav ul li {
+          font-size: 18px;
+          text-transform: uppercase;
+          padding: 10px; }
+    header .mainBar #hamburger {
+      position: absolute;
+      right: 0;
+      margin-right: 5px; }
+  header .popupBar {
+    position: fixed;
+    display: none;
+    z-index: 999999;
+    width: 100%;
+    background-color: #c4c4c4;
+    top: 58.14px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #000000ad; }
+    header .popupBar ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      header .popupBar ul li {
+        padding: 5px 10px; }
+
+.sliderWindow {
+  position: relative;
+  padding-top: 50px; }
+  .sliderWindow .mainText {
+    position: absolute;
+    display: none;
+    width: 100%;
+    text-align: center;
+    z-index: 3999;
+    top: 43%; }
+    .sliderWindow .mainText h1 {
+      font-size: 60px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-shadow: 2px 2px 8px #000000; }
+    .sliderWindow .mainText h2 {
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 1.25;
+      max-width: 800px;
+      color: white;
+      margin: 0 auto;
+      margin-top: 10px;
+      text-shadow: 2px 2px 8px #000000; }
+    .sliderWindow .mainText button {
+      margin-top: 25px;
+      background-color: #2e5ad4;
+      border: none;
+      font-weight: bold;
+      padding: 10px;
+      font-size: 18px;
+      color: white;
+      border-radius: 10px;
+      text-transform: uppercase;
+      box-shadow: 2px 2px 8px #000000;
+      letter-spacing: 1.3px; }
+  .sliderWindow .my_slider picture {
+    height: auto;
+    max-height: 100vh; }
+    .sliderWindow .my_slider picture img {
+      width: 100vw; }
+
+.informationCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 30px; }
+  .informationCards .problemBox {
+    text-align: center;
+    padding: 5px; }
+    .informationCards .problemBox h2 {
+      padding: 5px; }
+  .informationCards .upcomingBox {
+    padding: 5px; }
+    .informationCards .upcomingBox h2 {
+      padding: 5px 0;
+      font-weight: 700; }
+    .informationCards .upcomingBox p {
+      padding: 5px 0; }
+
+.articles .article {
+  margin-top: 30px; }
+  .articles .article h1 {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 5px 0; }
+  .articles .article h2 {
+    padding: 5px 0;
+    font-weight: 700;
+    font-size: 18px; }
+  .articles .article h3 {
+    font-size: 12px;
+    padding: 5px 0;
+    color: #525252; }
+  .articles .article p {
+    padding: 5px 0; }
+  .articles .article img {
+    padding: 10px;
+    width: 100%; }
+  .articles .article .size300 {
+    width: 300px; }
+
+footer {
+  padding: 30px;
+  text-align: center;
+  background-color: #A14A14;
+  color: white;
+  margin-top: 30px; }
+
+@media only screen and (min-width: 30rem) {
+  header .mainBar {
+    display: grid;
+    grid-template-columns: 150px 1fr; }
+    header .mainBar img {
+      width: 80px;
+      padding: 5px;
+      padding-left: 20px; }
+  header .popupBar {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    top: 68.17px; }
+
+  .sliderWindow .mainText {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 3999;
+    top: 43%; }
+    .sliderWindow .mainText h1 {
+      font-size: 40px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-shadow: 2px 2px 8px #000000; }
+    .sliderWindow .mainText h2 {
+      font-size: 25px;
+      line-height: 1.25;
+      max-width: 800px;
+      color: white;
+      margin: 0 auto;
+      margin-top: 10px;
+      text-shadow: 2px 2px 8px #000000; }
+
+  .informationCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+
+  .articles .article {
+    margin-top: 30px; }
+    .articles .article h1 {
+      font-size: 30px;
+      font-weight: 700;
+      padding: 5px 0; }
+    .articles .article h2 {
+      padding: 5px 0;
+      font-weight: 700;
+      font-size: 18px; }
+    .articles .article h3 {
+      font-size: 12px;
+      padding: 5px 0;
+      color: #525252; }
+    .articles .article p {
+      padding: 5px 0; }
+    .articles .article img {
+      float: right;
+      padding: 10px;
+      width: 520px; }
+    .articles .article .left {
+      float: left; } }
+@media only screen and (min-width: 46.875rem) {
+  header .mainBar {
+    display: grid;
+    grid-template-columns: 150px 1fr; }
+    header .mainBar img {
+      width: 100px;
+      padding: 5px;
+      padding-left: 20px; }
+    header .mainBar nav {
+      text-align: right;
+      padding-right: 20px;
+      display: block; }
+      header .mainBar nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%; }
+        header .mainBar nav ul li {
+          font-size: 18px;
+          text-transform: uppercase;
+          padding: 10px; }
+    header .mainBar #hamburger {
+      display: none; }
+  header .popupBar {
+    display: none; }
+
+  .sliderWindow {
+    position: relative; }
+    .sliderWindow .mainText {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      z-index: 3999;
+      top: 43%; }
+      .sliderWindow .mainText h1 {
+        font-size: 60px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-shadow: 2px 2px 8px #000000; }
+      .sliderWindow .mainText h2 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 1.25;
+        max-width: 800px;
+        color: white;
+        margin: 0 auto;
+        margin-top: 10px;
+        text-shadow: 2px 2px 8px #000000; }
+      .sliderWindow .mainText button {
+        margin-top: 25px;
+        background-color: #2e5ad4;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        color: white;
+        border-radius: 10px;
+        text-transform: uppercase;
+        box-shadow: 2px 2px 8px #000000; }
+    .sliderWindow .my_slider picture {
+      height: auto;
+      max-height: 100vh; }
+      .sliderWindow .my_slider picture img {
+        width: 100vw; }
+
+  .informationCards {
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr; } }
+
+/*# sourceMappingURL=styles.css.map */

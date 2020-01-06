@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Swag Shop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="img/logo.svg" alt="logo">
+            <h1>Swag Shop</h1>
+        </header>
+        <!--
+        <nav>
+            
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Deals</li>
+                <li>Order</li>
+                <li>Customer Reviews</li>
+            </ul>
+        </nav>
+        -->
+
+        <!-- NAVIGATION HERE -->
+        <nav class="clearfix">
+            <button id="hamburgerBtn"><span><i>&equiv;</i>OPEN</span> <span><i>&otimes;</i>CLOSE</span></button>
+            <ul id="primaryNav">
+                <li><a href="#">Home</a></li>
+                <li class="current-menu-item"><a href="#">Products</a></li>
+                <li><a href="#">Deals</a></li>
+                <li class="parent"><a href="#">Order</a>
+                    <ul>
+                        <li><a href="#">Now</a></li>
+                        <li><a href="#">Then</a></li>
+                        <li><a href="#">Before</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Customer Reviews</a></li>
+                <li><a href="#">About</a></li> 
+        
+            </ul>
+        </nav>
+
+        <section>
+            <h2>Orders</h2>
+            <form id="form" action="thanks.html">
+                <div class="formSection">
+                    <h3>Customer Information</h3><span class="break"></span>
+                    <label>Full Name</label>
+                    <input required type="text"><span class="break"></span>
+                    <label>Phone</label>
+                    <input required type="text"><span class="break"></span>
+                    <label>Email</label>
+                    <input required type="text">
+                </div>
+                <div class="formSection">
+                    <h3>Swag Information</h3><span class="break"></span>
+                    <label>Date Needed</label>
+                    <input required type="date"><span class="break"></span>
+                    <label>Business Name</label>
+                    <input required type="text"><span class="break"></span>
+                    <label>Business URL</label>
+                    <input required type="url"><span class="break"></span>
+                    <label>Colors</label>
+                    <select>
+                        <option value="green">Green</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="orange">Orange</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                    </select>
+
+                    <span class="break"></span>
+
+                    <label>Quantity</label>
+                    <input required type="text"><span class="break"></span>
+                    <div class="radio">
+                        <label>Material</label><br>
+                        <input type="radio"><label>Aluminum</label><br>
+                        <input type="radio"><label>Plastic</label>
+                    </div>
+                </div>
+                <div class="formSection">
+                    <label>Full Name</label>
+                    <input required type="text"><span class="break"></span>
+                    <label>Number</label>
+                    <input required type="text"><span class="break"></span>
+                    <label>Experiation Date</label>
+                    <input required type="text">
+                </div>
+                <button type="submit" form="form" value="Order my swag">Order my swag</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2019 &bull; Swag Shop &bull; Phone 1-800-555-1234 &bull; Login</p>
+        </footer>
+
+        <script>
+        //Create a button and give it an ID of "hamburgerBtn"
+        //Attach an ID of "primaryNav" to the UL of the unordered list that holds your links
+        function toggleMenu() {
+            document.getElementById("hamburgerBtn").classList.toggle("open");
+            document.getElementById("primaryNav").classList.toggle("open");
+        }
+        var x = document.getElementById('hamburgerBtn');
+        x.onclick = toggleMenu; 
+        </script>
+    </div>
+</body>
+</html>

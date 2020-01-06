@@ -1,0 +1,27 @@
+header {
+    font-size: 60px;
+    .logoContainer {
+        width: 140px;
+    }
+    .logo {
+        width: 100%;
+    }
+    .headerText {
+        .headerSlogan {
+            display: inline-block;
+            font-size: 23px;
+        }
+        .title {
+            font-size: 50px;
+        }
+    }
+}
+.mainImage {
+    width: 50%;
+    float: right;
+    padding: 10px;
+}
+
+nav .container {
+    display: flex;
+}

@@ -1,0 +1,36 @@
+.images {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    figure:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    figure {
+        figcaption {
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
+
+  
+footer {
+  .footerGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    .footerBlock {
+      
+      h2 {
+        
+      }
+      ul {
+      }
+    }
+  }
+}

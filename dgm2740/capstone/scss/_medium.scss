@@ -1,0 +1,87 @@
+header {
+    
+  .mainBar {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    img {
+        width: 80px;
+        padding: 5px;
+        padding-left: 20px;
+        //filter: drop-shadow(4px 4px 4px rgba(34, 34, 34, 0.4));
+    } 
+    #hamburger {
+        
+    }
+  }
+  .popupBar {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    top: 68.17px;
+  }
+  
+}
+
+.sliderWindow {
+  .mainText {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 3999;
+    top: 43%;
+    h1 {
+      font-size: 40px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-shadow: 2px 2px 8px #000000;
+    }
+    h2 {
+      font-size: 25px;
+      line-height: 1.25;
+      max-width: 800px;
+      color: white;
+      margin: 0 auto;
+      margin-top: 10px;
+      text-shadow: 2px 2px 8px #000000;
+    }
+  }
+}
+
+.informationCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.articles {
+  .article {
+    margin-top: 30px;
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      padding: 5px 0;
+    }
+    h2 {
+      padding: 5px 0;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 12px;
+      padding: 5px 0;
+      color: rgb(82, 82, 82);
+    } 
+    p {
+      padding: 5px 0;
+    }
+    img {
+      float: right;
+      padding: 10px;
+      width: 520px;
+    }
+    .left {
+      float: left;
+    }
+  }
+}

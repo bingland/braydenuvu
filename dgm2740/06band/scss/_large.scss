@@ -1,0 +1,8 @@
+.membersSection {
+    .memberTilesContainer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+nav ul {
+    display: flex;
+}

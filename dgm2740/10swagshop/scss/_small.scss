@@ -1,0 +1,221 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { 
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+$mainPurple: #9900C9;
+$green1: #0F9661;
+$green2: #067D4E;
+$orange: #D29915;
+$darkPurple: #630C7D;
+
+
+header {
+  img {
+    width: 60px;
+    margin: 10px;
+    display: inline;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    top: -20px;
+  }
+}
+
+#hamburgerBtn { display: none; }
+
+$menuColor: $darkPurple;
+$menuTextColor: rgba(255,255,255,0.9);
+
+@media only screen and (max-width: 60rem) {
+
+  body { padding-top: 2.75rem; }
+  
+  nav {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 2.75rem;
+    background-color: $menuColor;
+  }
+    
+	#hamburgerBtn {
+		display: block;
+		width: 7rem;
+    height: 2.75rem;
+    background: none;
+    color: $menuTextColor;
+    border: 0 none;
+    font-size: 1.3rem;
+    font-weight: normal;
+    text-align: left;
+    i {font-size: 2rem;font-style: normal;}
+      
+	}
+    
+  #hamburgerBtn.open span:nth-child(1) {display: none;}
+  #hamburgerBtn.open span:nth-child(2) {display: block;}
+  #hamburgerBtn span:nth-child(1) {display: block;}
+  #hamburgerBtn span:nth-child(2) {display: none;}
+
+	#primaryNav {
+    height: 0; 
+    overflow: hidden;
+		width: 20rem;
+		background-color: $menuColor;
+		margin: 0;
+		padding: 0;
+		z-index: 998; 
+    font-family: Verdana;
+    font-weight: normal;
+	}
+    
+  #primaryNav li.current-menu-item a {background-color: rgba(0,0,0,0.25);}
+    
+	#primaryNav li a {
+		display: block;
+		width: 100%;
+		padding: .75rem 2vw;
+		font-size: 14px;
+		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+		color: $menuTextColor;
+		text-decoration: none;
+		border-top: 1px solid rgba(0,0,0,.2);
+	}
+    
+	#primaryNav li a:hover {
+		background-color: rgba(0,0,0,.5);
+	}
+
+	#primaryNav.open {height: auto;}
+
+	#primaryNav li.parent > a::after {
+    font-size: .75rem;
+		content: "\25BC";
+		color: rgba(255,255,255,.5);
+		float: right;
+	}
+
+	#primaryNav li ul {
+		display: none;
+		background: rgba(0,0,0,.3);
+		padding: 0;
+    margin: 0 ;
+	}
+    
+    #primaryNav li ul a {
+        padding-left: 20px;
+    }
+    
+    #primaryNav li:hover ul {display: block;}
+} 
+
+section {
+  h2 {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  form {
+    font-size: 20px;
+    margin-top: -15px;
+    h3 {
+      font-size: 30px;
+      padding: 10px;
+      font-weight: bold;
+    }
+    .formSection {
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 10px;
+      margin: 20px 0;
+      background-color: lighten(grey, 40%);
+
+      h3 {
+        padding: 3px;
+      }
+      label {
+        display: block;
+        padding: 3px;
+      }
+      input:required {
+        display: block;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 3px;
+        margin: 3px;
+        font-size: 20px;
+      }
+      input:required:valid {
+        border: 1px solid green;
+      }
+      select {
+        font-size: 20px;
+        padding: 3px;
+        margin: 3px;
+      }
+      .radio {
+        line-height: 1.3;
+        label {
+          display: inline;
+        }
+      }
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 3px;
+      border-radius: 5px;
+      background-color: lighten($orange, 20%);
+      border: 1px solid black;
+      font-weight: bold;
+    }
+  }
+}
+
+footer {
+  background-color: $darkPurple;
+  color: white;
+  margin-top: 20px;
+  p {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+.thanks {
+  height: 600px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  h1 {
+    font-size: 80px;
+  }
+}
+
+.break {
+  display: block;
+  height: 10px;
+}

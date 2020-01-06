@@ -1,0 +1,23 @@
+nav {
+  background-color: $primaryRed;
+  height: 41px;
+
+  ul {
+    display: flex;
+    li {
+      font-size: 25px;
+      padding: 7px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "nav"
+    "section"
+    "footer";
+}

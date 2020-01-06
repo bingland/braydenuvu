@@ -1,0 +1,38 @@
+#hamburger {
+    display: none;
+}
+
+header img {
+  width: 400px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: 
+    "nav section"
+    "nav section"
+    "footer footer";
+}
+#xbar {
+    display: none;
+}
+
+nav {
+  background-color: lighten($primaryRed, 5%);
+  height: 100%;
+
+  ul {
+    display: block;
+    li {
+      font-size: 25px;
+      padding: 7px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}
+
+section .textSection img {
+    width: 300px;
+}

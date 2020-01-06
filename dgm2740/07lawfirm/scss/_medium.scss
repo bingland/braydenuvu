@@ -1,0 +1,36 @@
+@for $i from 1 through 12 {
+  $w:($i / 12) * 100%;
+  .medium-#{$i}{ flex-basis: $w; }
+}
+
+header {
+  .wrapper {
+    .searchDiv {
+      display: block;
+    }
+  }
+}
+
+//nav 
+nav {
+  background-color: $purpleblue;
+  color: white;
+  ul {
+    display: flex;
+    li {
+      font-size: 18px;
+    }
+  }
+  svg {
+    display: none;
+  }
+  .searchDiv {
+    display: none;
+  }
+}
+
+.peopleSection {
+  .disappear {
+    display: none;
+  }
+}

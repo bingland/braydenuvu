@@ -1,0 +1,115 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { 
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+//colors
+$darkred: #A62F03;
+$orange: #F27F3D;
+$purpleish: #A4A3D9;
+
+
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  .headerMain {
+    padding: 20px;
+    padding-top: 60px;
+    background-image: url("../img/small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+}
+
+
+nav {
+  background-color: $darkred;
+  ul {
+    display: flex;
+    li {
+      padding: 8px;
+      font-size: 15px;
+      width: 25%;
+      text-align: center;
+    }
+    .activated {
+      background-color: $purpleish;
+    }
+  }
+}
+
+section {
+  h1 {
+    font-size: 40px;
+    padding: 10px;
+  }
+  h2 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  p {
+    padding: 10px;
+    line-height: 1.2;
+  }
+  .bearImg {
+    width: 100px;
+    position: relative;
+    animation-name: bearAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  .spiderImg {
+    width: 100px;
+    position: relative;
+    animation-name: spiderAnimation;
+    animation-duration: 2.2s;
+    animation-fill-mode: backwards;
+  }
+}
+
+@keyframes bearAnimation {
+  0% { left: 0; }
+  25% { transform: rotate(20deg); }
+  50% { left: 200px; }
+  75% {  }
+  100% { left: 0; } 
+}
+
+@keyframes spiderAnimation {
+  0% { transform: rotate(-20deg); left: 0px; }
+  25% { transform: rotate(20deg); left: 50px; }
+  50% { transform: rotate(-20deg); left: 100px; }
+  75% { transform: rotate(20deg); left: 150px; }
+  100% { transform: rotate(0deg); left: 0px;  } 
+}
+
+footer {
+  background-color: $darkred;
+  padding: 20px;
+  text-align: center;
+  font-size: 10px;
+}

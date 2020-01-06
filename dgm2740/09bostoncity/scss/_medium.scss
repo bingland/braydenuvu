@@ -1,0 +1,18 @@
+nav {
+  background-color: #3055b4;
+  color: white;
+  ul {
+    display: flex;
+    li {
+        font-size: 16px;
+    }
+  }
+  svg {
+    display: none;
+  }
+}
+
+.panelSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

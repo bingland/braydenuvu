@@ -1,0 +1,13 @@
+.membersSection{
+    .memberTilesContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+nav {
+    font-size: 20px;
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+    }
+}

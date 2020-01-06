@@ -1,0 +1,154 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { 
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+//header
+header {
+  padding: 10px;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/header.jpg');
+  color: white;
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+  }
+}
+
+//nav
+nav {
+  background: linear-gradient(142deg, rgba(4,0,71,1) 0%, rgba(9,9,121,1) 35%, rgba(0,21,203,1) 100%);
+  color: white;
+  ul {
+    display: none;
+    li {
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  svg {
+    fill: white;
+    width: 50px;
+  }
+}
+
+//slider
+.my_slider {
+  padding-bottom: 20px;
+  div {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .captionText {
+      background-color: rgba(192, 192, 192, 0.432);
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      color: white;
+    }
+  }
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.panelSection {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+  div:nth-child(1) a {
+    background: #3055b4;
+  }
+  div:nth-child(2) a {
+    background: #65D930;
+  }
+  div:nth-child(3) a {
+    background: #F2AB27;
+  }
+  div:nth-child(4) a {
+    background: #BF2C1F;
+  }
+  div:nth-child(1) {
+    background-image: url("../img/panel1.jpg");
+  }
+  div:nth-child(2) {
+    background-image: url("../img/panel2.jpg");
+  }
+  div:nth-child(3) {
+    background-image: url("../img/panel3.jpg");
+  }
+  div:nth-child(4) {
+    background-image: url("../img/panel4.jpg");
+  }
+  div {
+    a {
+      color: black;
+      display: block;
+      width: 100%;
+      height: 250px;
+      text-decoration: none;
+      padding: 0 2%;
+      transition: all .5s ease-in;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: 100%;
+        max-width: 100px;
+        max-height: 100px;
+        fill: white;
+      }
+      h3 {
+        padding-top: 20px;
+        color: white;
+      }
+    }
+    a:hover {
+      background: none;
+      text-shadow: 0 0 4px black;
+    }
+    
+  }
+  
+  
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  p {
+    padding: 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #3055b4;
+    
+  }
+}

@@ -1,0 +1,257 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { 
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+//colors
+$purpleblue: #473CCF;
+$lightblue: #3FA0D9;
+$swampgreen: #41C292;
+$limegreen: #57D93F;
+$yellow: #CFCC5F;
+
+//small sizes loop
+@for $i from 1 through 12 {
+  $w:($i / 12) * 100%;
+  .small-#{$i}{ flex-basis: $w; }
+}
+
+//header
+header {
+  background-color: $lightblue;
+  border-top: 7px solid $purpleblue;
+  padding-top: 10px;
+  .headerText {
+    padding: 10px;
+    color: whitesmoke;
+    h1{
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'Oswald', sans-serif;
+      padding-bottom: 10px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
+  .searchDiv {
+    display: none;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    input {
+      border: 1px solid black;
+      padding: 5px;
+    }
+  }
+}
+
+//nav 
+nav {
+  background-color: $purpleblue;
+  color: white;
+  ul {
+    display: none;
+    li {
+      padding: 10px;
+      font-size: 20px;
+    }
+    .activated {
+      background-color: darken($purpleblue, $amount: 20%);
+    }
+  }
+  svg {
+    width: 40px;
+    fill: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .searchDiv {
+    float: right;
+    padding: 5px;
+    margin: 10px;
+    input {
+      padding: 8px;
+      border: 1px solid black;
+    }
+  }
+}
+
+//people section 
+.peopleSection {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px 0;
+
+  .personCard {
+    .personContent {
+      margin: 5px;
+      border: 1px solid grey;
+      background-color: $lightblue;
+      h2 {
+        padding: 10px;
+        font-size: 20px;
+      }
+      .personImgContainer {
+        img {
+          width: 100%;
+        }
+      }
+      .personButton {
+        margin: 15px 10px;
+        padding: 5px;
+        font-size: 17px;
+        border: 1px solid grey;
+        background: $purpleblue;
+        border-radius: 8px;
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .disappear {
+    display: none;
+  }
+}
+
+//mid menu
+.midMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  .midMenuDiv{
+    padding: 5px;
+    .midMenuItem {
+      background: $purpleblue;
+      padding: 20px;
+      a {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: whitesmoke;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+//blog posts
+.blogPosts {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+
+  .blogPost {
+    padding: 5px;
+    .postContent {
+      background-color: $lightblue;
+      .postImgDiv {
+        img {
+          width: 100%;
+        }
+      }
+      .postTextDiv {
+        padding: 5px;
+        h2{
+          font-size: 25px;
+        }
+        p {
+          line-height: 1.2;
+        }
+      }
+      .postButton {
+        color: whitesmoke;
+        background-color: $purpleblue;
+        width: 100%;
+        border: none;
+        padding: 7px;
+        text-transform: uppercase;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+//tips and faq
+.tipsFAQ {
+  display: flex;
+  flex-wrap: wrap;
+  .tip {
+    padding: 5px;
+    .tipContent {
+      background: $swampgreen;
+      padding: 5px;
+      h1 {
+        font-size: 30px;
+        padding-bottom: 10px;
+      }
+      p {
+        line-height: 1.1;
+        padding-bottom: 10px;
+      }
+      button {
+        background: lightgrey;
+        border: none;
+      }
+    }
+  }
+  .faq {
+    padding: 5px;
+    .tipContent {
+      background: $yellow;
+      padding: 5px;
+      h1 {
+        font-size: 30px;
+        padding-bottom: 10px;
+      }
+      p {
+        line-height: 1.1;
+        padding-bottom: 10px;
+      }
+      button {
+        background: lightgrey;
+        border: none;
+      }
+    }
+  }
+}
+
+footer {
+  ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: $lightblue;
+    border-bottom: none;
+    margin-top: 10px;
+    
+    li {
+      padding: 10px;
+      a {
+        font-size: 50px;
+        color: black;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

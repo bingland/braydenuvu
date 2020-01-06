@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Swag Shop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="img/logo.svg" alt="logo">
+            <h1>Swag Shop</h1>
+        </header>
+        <!--
+        <nav>
+            
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Deals</li>
+                <li>Order</li>
+                <li>Customer Reviews</li>
+            </ul>
+        </nav>
+        -->
+
+        <!-- NAVIGATION HERE -->
+        <nav class="clearfix">
+            <button id="hamburgerBtn"><span><i>&equiv;</i>OPEN</span> <span><i>&otimes;</i>CLOSE</span></button>
+            <ul id="primaryNav">
+                <li><a href="#">Home</a></li>
+                <li class="current-menu-item"><a href="#">Products</a></li>
+                <li><a href="#">Deals</a></li>
+                <li class="parent"><a href="#">Order</a>
+                    <ul>
+                        <li><a href="#">Now</a></li>
+                        <li><a href="#">Then</a></li>
+                        <li><a href="#">Before</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Customer Reviews</a></li>
+                <li><a href="#">About</a></li> 
+        
+            </ul>
+        </nav>
+
+        <section class="thanks">
+            <h1>Thanks for your order!</h1>
+        </section>
+
+        <footer>
+            <p>&copy; 2019 &bull; Swag Shop &bull; Phone 1-800-555-1234 &bull; Login</p>
+        </footer>
+
+        <script>
+        //Create a button and give it an ID of "hamburgerBtn"
+        //Attach an ID of "primaryNav" to the UL of the unordered list that holds your links
+        function toggleMenu() {
+            document.getElementById("hamburgerBtn").classList.toggle("open");
+            document.getElementById("primaryNav").classList.toggle("open");
+        }
+        var x = document.getElementById('hamburgerBtn');
+        x.onclick = toggleMenu; 
+        </script>
+    </div>
+</body>
+</html>

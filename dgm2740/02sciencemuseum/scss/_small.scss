@@ -1,0 +1,109 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+$darkestblue: #335580;
+$lightblue: #B3D5FF;
+$medblue: #66ABFF;
+$greyblue: #596A80;
+$darkishblue: #5289CC;
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  font-family: 'Yeseva One', cursive;
+
+  .logoContainer {
+    width: 100px;
+  }
+  .logo {
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  .headerText {
+    padding: 10px;
+    .title {
+      color: $darkestblue;
+      font-weight: bold;
+      padding: 0 20px;
+      font-size: 40px;
+    }
+    .headerSlogan {
+      color: $darkishblue;
+      font-weight: bold;
+      padding: 0 20px;
+      font-size: 20px;
+      display: inline-block;
+      display: none;
+    }
+  }
+}
+
+nav {
+  background-color: $darkestblue;
+}
+nav .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.navItem {
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.active {
+  background-color: $greyblue;
+}
+
+
+
+.companyImage {
+  width: 100%;
+}
+.companySlogan {
+  text-align: center;
+  font-size: 40px;
+  color: $darkestblue;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.mainImage {
+  width: 100%;
+}
+.loremIpsum {
+  padding: 10px;
+  font-size: 22px;
+  line-height: 1.1;
+  padding-bottom: 20px;
+}
+
+footer {
+  background-color: $darkestblue;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}

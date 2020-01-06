@@ -1,0 +1,130 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { 
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+//colors
+$pink: #AA23B0;
+$purple: #7A28C7;
+$darkviolet: #372CB0;
+$blue: #285EC7;
+$lightblue: #2D9BBD;
+
+
+
+//header
+header {
+  width: 100%;
+  background: $purple;
+  color: white;
+
+  .headerText {
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    h1 {
+      font-size: 80px;
+      padding: 10px;
+    }
+    h2 {
+      font-size: 40px;
+      padding: 10px;
+      padding-top: 0;
+    }
+  }
+}
+
+//nav
+nav {
+  width: 100%;
+  background: $darkviolet;
+  font-size: 17px;
+  color: white;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    li {
+      padding: 15px;
+    }
+    .active {
+      background: $lightblue;
+    }
+  }
+}
+
+//members section
+.membersSection {
+  h2 {
+    font-size: 40px;
+    padding: 20px;
+    padding-bottom: 5px;
+  }
+  .memberTilesContainer {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    img {
+      width: 150px;
+      clip-path: circle(45%);
+      shape-outside: circle(50%);
+      float: left;
+    }
+    h3 {
+      font-size: 23px;
+      font-weight: bold;
+      padding: 10px;
+    }
+    p {
+      font-size: 17px;
+      line-height: 1.2;
+    }
+  }
+}
+
+//performers section
+.performancesSection {
+  h2 {
+    font-size: 40px;
+    padding: 20px;
+  }
+  .performances {
+    font-size: 0px;
+    figure {
+      width: 100%;
+      height: 0;
+      padding-top: 1%;
+      img {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+//footer 
+footer {
+  width: 100%;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  background-color: $darkviolet;
+}

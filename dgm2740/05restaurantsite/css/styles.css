@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+header {
+  display: flex;
+  background-color: #F7D699; }
+  header .logoContainer {
+    width: 100px;
+    padding: 10px; }
+    header .logoContainer figure img {
+      width: 100%; }
+  header .headerText {
+    padding: 10px; }
+    header .headerText h1 {
+      font-size: 40px; }
+    header .headerText h2 {
+      font-size: 30px; }
+
+nav {
+  background-color: #BF2604;
+  color: white; }
+  nav ul {
+    display: flex;
+    justify-content: space-evenly; }
+    nav ul li {
+      padding: 10px;
+      font-size: 20px; }
+
+.heroContainer {
+  width: 100%; }
+  .heroContainer picture {
+    width: 100%; }
+    .heroContainer picture source {
+      width: 100%; }
+    .heroContainer picture img {
+      width: 100%; }
+
+.secondSection .sectionText {
+  line-height: 1.2; }
+  .secondSection .sectionText h2 {
+    font-size: 50px;
+    padding: 10px; }
+  .secondSection .sectionText p {
+    font-size: 20px;
+    padding: 10px; }
+.secondSection .sideImgContainer {
+  float: right;
+  padding: 10px;
+  width: 50%; }
+  .secondSection .sideImgContainer .sideImg {
+    width: 100%; }
+    .secondSection .sideImgContainer .sideImg source {
+      width: 50%; }
+    .secondSection .sideImgContainer .sideImg img {
+      width: 100%; }
+
+footer {
+  background-color: #BF2604;
+  color: white;
+  text-align: center; }
+  footer h3 {
+    font-size: 18px;
+    padding: 30px 0; }
+
+@media only screen and (min-width: 30rem) {
+  header .logoContainer {
+    width: 140px; }
+  header .headerText h1 {
+    font-size: 48px; }
+  header .headerText h2 {
+    font-size: 38px; } }
+@media only screen and (min-width: 46.875rem) {
+  header {
+    display: flex; }
+    header .logoContainer {
+      width: 150px;
+      padding: 10px; }
+      header .logoContainer figure img {
+        width: 100%; }
+    header .headerText {
+      padding: 10px; }
+      header .headerText h1 {
+        font-size: 70px; }
+      header .headerText h2 {
+        font-size: 40px; }
+
+  nav ul {
+    justify-content: flex-start; } }
+
+/*# sourceMappingURL=styles.css.map */
