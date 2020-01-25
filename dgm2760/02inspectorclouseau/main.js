@@ -7,8 +7,8 @@ const xSize = window.innerWidth
 const ySize = window.innerHeight
 document.querySelector('#windowSize').innerHTML = `${xSize} pixels wide and ${ySize} pixels tall.`
 
-const xOffset = window.pageXOffset
-const yOffset = window.pageYOffset
+const xOffset = window.screenLeft
+const yOffset = window.screenTop
 document.querySelector('#windowOffset').innerHTML = `${xOffset} and ${yOffset}`
 
 const url = window.location

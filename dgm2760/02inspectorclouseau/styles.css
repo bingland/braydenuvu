@@ -12,18 +12,19 @@ body {
 }
 
 header {
-    background-color: brown;
-    /* background-image: url('header.jpg'); */
+    background-color: #91630e;
+    background-image: url('header.jpg');
+    background-position: 0 -350px;
     color: white;
     text-shadow: 3px 3px 8px #000000a1;
     padding: 20px;
 }
 header h1 {
-    font-size: 80px;
+    font-size: 50px;
     padding: 5px;
 }
 header h2 {
-    font-size: 50px;
+    font-size: 25px;
     padding: 5px;
 }
 
@@ -45,7 +46,7 @@ section ul {
 }
 
 footer {
-    background-color: #667302;
+    background-color: #8f8b84;
     padding: 15px;
     color: rgb(226, 226, 226);
     text-align: center;
