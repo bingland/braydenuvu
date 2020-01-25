@@ -1,0 +1,107 @@
+* {
+    font-family: 'Ibarra Real Nova', serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: rgb(48, 48, 48);
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #0e9145;
+    /* background-image: url('header.jpg'); */
+    background-position: 0 -350px;
+    color: white;
+    text-shadow: 3px 3px 8px #000000a1;
+    padding: 20px;
+}
+header h1 {
+    font-size: 50px;
+    padding: 5px;
+}
+header h2 {
+    font-size: 25px;
+    padding: 5px;
+}
+
+section {
+    padding: 15px 0;
+}
+section h1 {
+    font-size: 30px;
+    padding: 5px;
+}
+section p {
+    font-size: 20px;
+    padding: 0 10px 10px 5px;
+}
+
+section ul {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #8f8b84;
+    padding: 15px;
+    color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+.game {
+    max-width: 500px;
+}
+
+.gameover {
+    max-width: 150px;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+}
+.gameover .award {
+    padding: 3px;
+}
+.gameover .playAgain button {
+    font-size: 20px;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.console {
+    background-color: lightcyan;
+    text-align: center;
+    padding: 10px;
+}
+.console p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.controls {
+    display: flex;
+    background-color: lightcoral;
+    font-size: 20px;
+    align-items: center;
+}
+.controls .guessCount {
+    padding: 3px;
+}
+.controls .guessValue form input {
+    padding: 3px;
+    margin: 5px;
+    width: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 20px;
+}
+.controls .guessButton button {
+    margin: 3px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+}

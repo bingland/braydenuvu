@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>02 Inspector Clouseau</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <!-- insert via javascript -->
+            <h1></h1>
+            <h2></h2>
+        </header>
+        <section>
+            <h1>What I learned</h1>
+            <ul>
+                <li>How to get the window offset via JavaScript</li>
+                <li>How to get a page's URL via JavaScript</li>
+                <li>How to check when a document was last updated</li>
+            </ul>
+        </section>
+        <section class="instructions">
+            <h1>Instructions</h1>
+            <p>In this game you try to guess a random number between one and 15 in as few tries as possible. You will be rewarded an award for your skills. Good luck!</p>
+        </section>
+
+        <section class="game">
+            <div class="gameover">
+                <div class="award">Award Image</div>
+                <div class="playAgain"><button>Play again</button></div>
+            </div>
+            <div class="console"><p>Beep boop... console feedback here.</p></div>
+            <div class="controls">
+                <div class="guessValue"><form><input type="text" /></form></div>
+                <div class="guessButton"><button>Guess</button></div>
+                <div class="guessCount">0</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2020 Brayden England - DGM 2760</p>
+        </footer>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
