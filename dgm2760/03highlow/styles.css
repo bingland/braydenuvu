@@ -68,6 +68,16 @@ footer {
     left: 180px;
     top: 30px;
     border-radius: 3px;
+    animation-name: gameover;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes gameover {
+    from { opacity: 0; }
+    to { opacity: 1; }
+
 }
 .gameover .award {
     padding: 15px;
