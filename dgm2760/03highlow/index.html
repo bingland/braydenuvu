@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>02 Inspector Clouseau</title>
+    <title>03 High Low</title>
 </head>
 <body>
     <div class="wrapper">
@@ -18,9 +18,9 @@
         <section>
             <h1>What I learned</h1>
             <ul>
-                <li>How to get the window offset via JavaScript</li>
-                <li>How to get a page's URL via JavaScript</li>
-                <li>How to check when a document was last updated</li>
+                <li>How to apply programming logic to a game</li>
+                <li>Properly structuring code via functions and event listeners</li>
+                <li>Disabling and enabling buttons and text input fields via JavaScript</li>
             </ul>
         </section>
         <section class="instructions">
@@ -30,14 +30,17 @@
 
         <section class="game">
             <div class="gameover">
-                <div class="award">Award Image</div>
+                <div class="award"></div>
+                <div class="finalScoreDiv">Final score: <span class="finalScore"></span></div>
                 <div class="playAgain"><button>Play again</button></div>
             </div>
-            <div class="console"><p>Beep boop... console feedback here.</p></div>
+            <div class="console"><p>Pick a number between 1 and 15</p></div>
             <div class="controls">
-                <div class="guessValue"><form><input type="text" /></form></div>
-                <div class="guessButton"><button>Guess</button></div>
-                <div class="guessCount">0</div>
+                <form>
+                    <div class="guessValue"><input type="text" maxlength="2" /></div>
+                    <div class="guessButton"><button type="submit">Guess</button></div>
+                    <div class="guessCount">0</div>
+                </form>
             </div>
         </section>
 

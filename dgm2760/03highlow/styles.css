@@ -1,5 +1,5 @@
 * {
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -13,7 +13,7 @@ body {
 
 header {
     background-color: #0e9145;
-    /* background-image: url('header.jpg'); */
+    background-image: url('./img/header.jpg');
     background-position: 0 -350px;
     color: white;
     text-shadow: 3px 3px 8px #000000a1;
@@ -46,25 +46,40 @@ section ul {
 }
 
 footer {
-    background-color: #8f8b84;
-    padding: 15px;
+    background-color: #402f57;
+    padding: 45px;
     color: rgb(226, 226, 226);
     text-align: center;
 }
 
 .game {
     max-width: 500px;
+    position: relative;
+    margin: 30px auto;
 }
 
 .gameover {
     max-width: 150px;
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(255, 255, 255, 0.74);
     text-align: center;
     padding: 5px;
-    margin: 0 auto;
+    display: none;
+    position: absolute;
+    left: 180px;
+    top: 30px;
+    border-radius: 3px;
 }
 .gameover .award {
-    padding: 3px;
+    padding: 15px;
+}
+.gameover .award img {
+    width: 100%;
+}
+.gameover .finalScoreDiv {
+    font-size: 20px;
+}
+.gameover .finalScoreDiv .finalScore {
+    font-weight: bold;
 }
 .gameover .playAgain button {
     font-size: 20px;
@@ -74,24 +89,32 @@ footer {
 }
 
 .console {
-    background-color: lightcyan;
+    background-color: rgb(241, 211, 255);
     text-align: center;
     padding: 10px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
 }
 .console p {
-    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
 }
 
 .controls {
-    display: flex;
-    background-color: lightcoral;
+    background-color: rgb(147, 128, 232);
     font-size: 20px;
+}
+.controls form {
+    display: flex;
     align-items: center;
 }
-.controls .guessCount {
+.controls form .guessCount {
     padding: 3px;
+    align-self: right;
 }
-.controls .guessValue form input {
+.controls form .guessValue input {
     padding: 3px;
     margin: 5px;
     width: 40px;
@@ -99,7 +122,7 @@ footer {
     border: 1px solid grey;
     font-size: 20px;
 }
-.controls .guessButton button {
+.controls form .guessButton button {
     margin: 3px;
     padding: 5px;
     font-size: 20px;
