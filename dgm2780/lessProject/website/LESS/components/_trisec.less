@@ -1,0 +1,39 @@
+.triSec {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+    .triBox {
+        width: 100%;
+        height: 360px;
+        background-color: green;
+        background-size: cover;
+
+        .triFilter {
+            background-repeat: repeat;
+            width: 100%;
+            height: 100%;
+            position: relative; 
+            
+            h1 {
+                color: white;
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 446px) { .triSec .triBox { height: 420px; } }
+@media only screen and (min-width: 565px) { .triSec .triBox { height: 480px; } }
+@media only screen and (min-width: 770px) { .triSec .triBox { height: 540px; } }
+@media only screen and (min-width: 900px) { .triSec .triBox { height: 760px; } }
+@media only screen and (min-width: 1025px) { 
+    .triSec {
+        grid-template-columns: 1fr 1fr 1fr;
+        .triBox { height: 360px; }
+    }
+}
+@media only screen and (min-width: 1280px) { .triSec .triBox { height: 480px; } }
+@media only screen and (min-width: 1560px) { .triSec .triBox { height: 600px; } }

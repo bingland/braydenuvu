@@ -153,28 +153,51 @@ body {
   margin: 0 auto;
   background-color: #FFFFFF;
 }
+.subWrapper {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 20px;
+}
 h1 {
-  font-size: 32px;
-  line-height: 38px;
-  text-transform: uppercase;
-}
-h2 {
-  font-size: 28px;
-  line-height: 38px;
-  text-transform: uppercase;
-}
-h3 {
   font-size: 24px;
   line-height: 32px;
   text-transform: uppercase;
 }
-p {
-  font-size: 16px;
+h2 {
+  font-size: 20px;
   line-height: 26px;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+p {
+  font-size: 14px;
+  line-height: 18px;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 button {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 18px;
   font-family: futuraBT, Arial, Helvetica, sans-serif;
   color: #FFFFFF;
   background-color: #494949;
@@ -182,6 +205,17 @@ button {
   border: none;
   padding: 15px 50px;
   text-transform: uppercase;
+  width: 100%;
+}
+@media only screen and (min-width: 568px) {
+  button {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  button {
+    font-size: 18px;
+  }
 }
 nav {
   height: 52px;
@@ -246,4 +280,124 @@ nav .fullNav .navIcons .navIcon {
   nav {
     height: 74px;
   }
+}
+.about {
+  text-align: center;
+  padding: 30px 0;
+}
+.about hr {
+  border: 1px solid grey;
+  width: 180px;
+  margin: 24px auto;
+}
+.about p {
+  text-decoration: underline;
+}
+.about button {
+  margin-top: 24px;
+}
+.triSec {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+.triSec .triBox {
+  width: 100%;
+  height: 360px;
+  background-color: green;
+  background-size: cover;
+}
+.triSec .triBox .triFilter {
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.triSec .triBox .triFilter h1 {
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+@media only screen and (min-width: 446px) {
+  .triSec .triBox {
+    height: 420px;
+  }
+}
+@media only screen and (min-width: 565px) {
+  .triSec .triBox {
+    height: 480px;
+  }
+}
+@media only screen and (min-width: 770px) {
+  .triSec .triBox {
+    height: 540px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .triSec .triBox {
+    height: 760px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .triSec {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .triSec .triBox {
+    height: 360px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .triSec .triBox {
+    height: 480px;
+  }
+}
+@media only screen and (min-width: 1560px) {
+  .triSec .triBox {
+    height: 600px;
+  }
+}
+.biSec {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px 0;
+  grid-gap: 20px;
+}
+.biSec .sec {
+  margin: 20px 0;
+}
+.biSec .sec img {
+  width: 100%;
+}
+.biSec .sec h3 {
+  padding: 10px 0;
+}
+.biSec .sec button {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 770px) {
+  .biSec {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+footer {
+  text-align: center;
+}
+footer .footerSec {
+  border-bottom: 1px solid #101010;
+}
+footer .foot1 img {
+  width: 40px;
+}
+footer .foot2 .icons img {
+  width: 40px;
+}
+footer .foot3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer .foot3 h4 {
+  padding: 20px;
+  border: 1px solid #101010;
 }
