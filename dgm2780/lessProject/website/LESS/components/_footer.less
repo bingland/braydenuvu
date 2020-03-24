@@ -6,22 +6,31 @@ footer {
     }
 
     .foot1 {
+        padding: 40px;
         img {
-            width: 40px;
+            width: 30px;
         }
         h3 {
-
+            font-weight: bold;
         }
     }
     .foot2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 40px;
+
         .icons {
             img {
                 width: 40px;
+                padding: 5px;
             }
         }
         .newsletter {
+            margin: 40px 0;
             button {
-                
+                background-color: white;
+                color: @textBlack;
+                border: 1px solid @textBlack;
             }
         }
     }

@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spas</title>
+	<link rel="stylesheet" href="css/spas.css">
 </head>
 <body>
     <div class="wrapper">
 
         <nav>
 			<div class="logo">Gordon Ramsay</div>
-			<!-- hamburger -->
+			<img src="icons/hamburger.svg" class="hamburger">
 			<ul class="fullNav">
-				<li>About Gordon</li>
-				<li>Restaurants & Bars</li>
-				<li>Recipes</li>
-				<li>Masterclasses</li>
-				<li>TV</li>
-				<li>Careers</li>
-				<li>Gifts</li>
-				<!-- socials -->
+				<li>About Gordon<img src="icons/downarrow.svg" class="navArrow"></li>
+				<li>Restaurants & Bars<img src="icons/downarrow.svg" class="navArrow"></li>
+				<li>Recipes<img src="icons/downarrow.svg" class="navArrow"></li>
+				<li>Masterclasses<img src="icons/downarrow.svg" class="navArrow"></li>
+				<li>TV<img src="icons/downarrow.svg" class="navArrow"></li>
+				<li>Careers<img src="icons/downarrow.svg" class="navArrow"></li>
+				<li>Gifts<img src="icons/downarrow.svg" class="navArrow"></li>
+				<div class="navIcons">
+					<img src="icons/twitter.svg" class="navIcon">
+					<img src="icons/facebook.svg" class="navIcon">
+					<img src="icons/youtube.svg" class="navIcon">
+					<img src="icons/instagram.svg" class="navIcon">
+				</div>
 			</ul>
 		</nav>
 
@@ -27,13 +33,39 @@
 
         <section class="spas">
             <div class="spa">
-                <!-- image -->
-                <h2>Title</h2>
-                <h3>Location</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quasi vel vitae veritatis labore? Quaerat voluptatum praesentium corrupti dolorum quas repellendus, dignissimos dolor debitis, natus error quidem corporis architecto perferendis?</p>
-                <button>Find location</button>
+                <img src="img/spa1.jpg">
+                <h3>Lucky cat</h3>
+                <p>10 Grosvenor Square,<br>Mayfair, London<br>W1K 6JP</p>
+				<div class="controls">
+					<button>Find location</button>
+					<button>More Info</button>
+				</div>
             </div>
         </section>
+
+        <footer>
+			<div class="footerSec foot1">
+				<img src="icons/arrowup.svg">
+				<h3>Back to Top</h3>
+			</div>
+			<div class="footerSec foot2">
+				<div class="icons">
+					<img src="icons/twitter.svg">
+					<img src="icons/facebook.svg">
+					<img src="icons/youtube.svg">
+					<img src="icons/instagram.svg">
+				</div>
+				<div class="newsletter">
+					<button>Newsletter Sign Up</button>
+				</div>
+			</div>
+			<div class="footerSec foot3">
+				<h4>Contact</h4>
+				<h4>Disclaimer</h4>
+				<h4>Privacy policy</h4>
+				<h4>Cookie Policy</h4>
+			</div>
+		</footer>
     </div>
 </body>
 </html>
