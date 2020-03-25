@@ -6,13 +6,12 @@
 
 .spas {
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
     padding: 20px;
     text-align: center;
 
     .spa {
-        width: 100%;
 
         img {
             width: 100%;
@@ -26,12 +25,33 @@
         .controls {
             display: grid;
             grid-template-columns: 1fr 1fr;
+
             .btnBox {
+                width: 100%;
                 padding: 10px;
+
                 button {
-                    
+                    width: 100%;
+                    padding: 10px 5px;
                 }
             }
         }
+    }
+}
+
+//770
+@media only screen and (min-width: 770px) {
+    .spas {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 1028px) {
+    .spas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .spas {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

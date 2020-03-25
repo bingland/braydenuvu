@@ -441,13 +441,10 @@ footer .foot3 h4 {
 }
 .spas {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 10px;
   padding: 20px;
   text-align: center;
-}
-.spas .spa {
-  width: 100%;
 }
 .spas .spa img {
   width: 100%;
@@ -457,5 +454,25 @@ footer .foot3 h4 {
   grid-template-columns: 1fr 1fr;
 }
 .spas .spa .controls .btnBox {
+  width: 100%;
   padding: 10px;
+}
+.spas .spa .controls .btnBox button {
+  width: 100%;
+  padding: 10px 5px;
+}
+@media only screen and (min-width: 770px) {
+  .spas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1028px) {
+  .spas {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .spas {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
