@@ -243,14 +243,21 @@ nav .fullNav li {
   font-size: 16px;
   font-family: futuraBTCondensed, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  padding: 0 18px;
+  padding: 0 18px 0 35px;
   position: relative;
 }
-nav .fullNav li .navArrow {
+nav .fullNav li a {
+  text-decoration: none;
+  color: #101010;
+}
+nav .fullNav li a .navArrow {
   position: absolute;
   width: 20px;
   top: -3px;
   right: -8px;
+}
+nav .fullNav .navIcons {
+  padding-left: 20px;
 }
 nav .fullNav .navIcons .navIcon {
   width: 30px;
@@ -426,4 +433,29 @@ footer .foot3 {
 footer .foot3 h4 {
   padding: 20px;
   border: 1px solid #101010;
+}
+.spaTitle {
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+}
+.spas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.spas .spa {
+  width: 100%;
+}
+.spas .spa img {
+  width: 100%;
+}
+.spas .spa .controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.spas .spa .controls .btnBox {
+  padding: 10px;
 }
