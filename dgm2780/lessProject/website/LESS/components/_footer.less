@@ -26,21 +26,87 @@ footer {
             }
         }
         .newsletter {
-            margin: 40px 0;
+            margin-top: 40px;
             button {
                 background-color: white;
                 color: @textBlack;
                 border: 1px solid @textBlack;
+                position: relative;
+                text-align: left;
+
+                img {
+                    width: 25px;
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                }
             }
         }
     }
     .foot3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "thing1 thing2 thing3"
+        "thing4 thing4 thing4";
+        border-bottom: 1px solid @textBlackLighter;
 
         h4 {
             padding: 20px;
-            border: 1px solid @textBlack;
+            border: 1px solid @textBlackLighter;
+        }
+        h4:nth-child(1) {
+            grid-area: thing1;
+            border: none;
+        }
+        h4:nth-child(2) {
+            grid-area: thing2;
+            border:none;
+            border-left: 1px solid @textBlackLighter;
+        }
+        h4:nth-child(3) {
+            grid-area: thing3;
+            border: none;
+            border-left: 1px solid @textBlackLighter;
+        }
+        h4:nth-child(4) {
+            grid-area: thing4;
+            border: none;
+            border-top: 1px solid @textBlackLighter;
+        }
+    }
+    .foot4 {
+        padding: 20px 0;
+        border-bottom: none;
+
+        h3 {
+            padding: 20px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        .foot2 {
+            grid-template-columns: auto auto;
+            justify-content: space-between;	
+
+            .newsletter {
+                margin: 0;
+            }
+        }
+        .foot3 {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "thing1 thing2 thing3 thing4";
+
+            h4:nth-child(4){
+                border: none;
+                border-left: 1px solid @textBlackLighter;
+            }
         }
     }
 }
