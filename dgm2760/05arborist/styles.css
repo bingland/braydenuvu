@@ -28,6 +28,13 @@ header h2 {
     padding: 5px;
 }
 
+.column {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
 section {
     padding: 15px 0;
 }
@@ -43,6 +50,41 @@ section p {
 section ul {
     margin-left: 20px;
     font-size: 20px;
+}
+
+section button {
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    display: block;
+}
+
+/* console / errors */ 
+.listItem {
+    background-color: lightblue;
+    padding: 5px;
+    font-size: 18px;
+    list-style-type: none;
+}
+#lengthDisplay {
+    background-color: lightblue;
+    padding: 5px;
+    font-size: 18px;
+    color: rgb(141, 136, 68);
+}
+.outputItem {
+    background-color: lightblue;
+    padding: 5px;
+    font-size: 18px;
+}
+.error {
+    background-color: salmon;
+    color: white;
+}
+
+.column div h1 {
+    padding: 5px;
 }
 
 footer {

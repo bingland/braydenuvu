@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>04 Fortune Teller</title>
+    <title>05 Arborist</title>
 </head>
 <body>
     <div class="wrapper">
@@ -24,32 +24,37 @@
                     </ul>
                 </section>
                 <section class="app">
-                    <h1>Adding Tree Practice</h1>
-                    <button>Add a Redwood Tree to the End</button>
-                    <button>Add a pear to the Start</button>
+                    <h1>Add Plant</h1>
+                    <button id="addToEnd">Add a Redwood Tree to the End</button>
+                    <button id="addToStart">Add a pear to the Start</button>
 
-                    <h1>Removing Tree Practice</h1>
-                    <button>Remove the first tree</button>
-                    <button>Remove the second tree down</button>
-                    <button>Remove the last tree</button>
+                    <h1>Remove Plant</h1>
+                    <button id="removeFirst">Remove the first tree</button>
+                    <button id="removeSecond">Remove the second tree down</button>
+                    <button id="removeLast">Remove the last tree</button>
 
-                    <h1>Manipulating Tree Practice</h1>
-                    <button>Sort the trees A>Z</button>
-                    <button>Make all trees lower case</button>
+                    <h1>Manipulate Plant</h1>
+                    <button id="sortAZ">Sort the trees A>Z</button>
+                    <button id="allLower">Make all trees lower case</button>
 
-                    <h1>Getting any tree from the list</h1>
-                    <button>What is the name of tree number three</button>
-                    <button>What is the name of tree number four</button>
+                    <h1>Getting any plant from the list</h1>
+                    <button id="threeName">What is the name of tree number three</button>
+                    <button id="fourName">What is the name of tree number four</button>
                 </section>
             </div>
             <div>
-                <h1>The Tree List</h1>
-                <div id="list">
-
-                </div>
-                <h1>Console</h1>
+                <h1>The Plant List</h1>
                 <div id="console">
-
+                    <div id="list">
+                        <ul>
+                            <!-- insert via javascript -->
+                        </ul>
+                        <div id="lengthDisplay"><span id="length"><!-- insert via javascript --></span> elements long</div>
+                    </div>
+                </div>
+                <h1>Console / Errors</h1>
+                <div id="errorConsole">
+                    <!-- insert via javascript -->
                 </div>
             </div>
         </div>
