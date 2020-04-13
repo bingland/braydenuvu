@@ -2,70 +2,109 @@
 <html>
 <head>
   <title>Cozy Corner</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" recent="width=device-width, initial-scale=1">
   <!-- <link href="img/favicon.png" type="img/png" rel="icon"> -->
   <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
   <link href="css/index.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-    <a class="navbar-brand" href="#">Cozy Corner</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container">
+  <a class="navbar-brand text-light" href="./index.html">Cozy Corner</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-    </div>
-  </nav>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="./book.html">Book</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+  </div>
+  </div>
+</nav>
 
 <div class="container">
 
   <div class="jumbotron">
     <h1 class="display-4">Meet your next favorite book.</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <p>Pretium quam vulputate dignissim suspendisse in est ante in nibh. Donec pretium vulputate sapien nec sagittis aliquam.</p>
+    <a class="btn btn-primary btn-lg space-top" href="#" role="button">Learn more</a>
   </div>
 
   <div class="row">
-    <div class="col-6">
+    <div class="col-lg-6 col-md-12 col-sm-12">
       <h2>Deciding what to read next?</h2>
       <p>You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations.</p>
     </div>
-    <div class="col-6">
+    <div class="col-lg-6 col-md-12 col-sm-12">
       <h2>What are your friends reading?</h2>
       <p>Chances are your friends are discussing their favorite (and least favorite) books on Goodreads.</p>
     </div>
     <div class="col-12">
       <div class="book-list">
-        <h1>books here</h1>
+        <h1>Recommended Books</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="rec-book" src="img/book2.jpg">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="rec-book" src="img/book3.jpg">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="rec-book" src="img/book4.jpg">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="rec-book" src="img/book5.jpg">
+            </div>
+              
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-12">
+
       <div class="book-list">
-        <h1>books here</h1>
+        <h1>Because you liked "Sweet Bessy":</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="rec-book" src="img/book5.jpg">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="rec-book" src="img/book6.jpg">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <img class="rec-book" src="img/book8.jpg">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <img class="rec-book" src="img/book7.jpg">
+            </div>
+            
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <section>
+  <section class="space-top">
     <h2>Search and browse books</h2>
-    <form>
-      <input type="text" class="form-control">
-    </form>
-    <div class="container">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Search for a book" aria-label="Search for a book" aria-describedby="basic-addon2">
+    </div>
+    <div class="recainer">
       <div class="row">
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <p>Art</p>
           <p>Biography</p>
           <p>Business</p>
@@ -75,7 +114,7 @@
           <p>Comics</p>
           <p>Cookbooks</p>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <p>Ebooks</p>
           <p>Fantasy</p>
           <p>Fiction</p>
@@ -85,7 +124,7 @@
           <p>Horror</p>
           <p>Memoir</p>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <p>Music</p>
           <p>Mystery</p>
           <p>Nonfiction</p>
@@ -95,7 +134,7 @@
           <p>Science</p>
           <p>Science Fiction</p>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <p>Self Help</p>
           <p>Sports</p>
           <p>Thriller</p>
@@ -107,6 +146,34 @@
     </div>
   </section>
 </div>
+
+<footer class="bg-dark text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+          <h5>COMPANY</h5>
+          <p><a>About us</a></p>
+          <p><a>Careers</a></p>
+          <p><a>Terms</a></p>
+          <p><a>Privacy</a></p>
+          <p><a>Help</a></p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5>WORK WITH US</h5>
+        <p><a>Authors</a></p>
+        <p><a>Advertise</a></p>
+        <p><a>Authors & ads blog</a></p>
+        <p><a>API</a></p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+          <p>&copy; Brayden England 2020</p>
+      </div>
+  </div>
+  </div>
+</footer>
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

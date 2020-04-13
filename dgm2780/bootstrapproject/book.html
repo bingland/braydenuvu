@@ -9,28 +9,39 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-    <a class="navbar-brand" href="#">Cozy Corner</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container">
+  <a class="navbar-brand text-light" href="./index.html">Cozy Corner</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-    </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="./book.html">Book</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+  </div>
+  </div>
 </nav>
 
 <div class="container">
-    <div class="alert alert-dark" role="alert">
+    <div class="alert alert-secondary" role="alert" id="hide">
+      You can always add a book to your list later.
+    </div>
+    <div class="alert alert-dark bg-light alert-dismissible fade show" role="alert">
         <h4 class="alert-heading">Goodreads helps you keep track of books you want to read.</h4>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
         <p>Start by marking “Recursion” as Want to Read:</p>
         <hr>
         <button type="button" class="btn btn-success">Want to Read</button>
@@ -38,10 +49,10 @@
 
     <div class="container">
         <div class="row">
-          <div class="col-2">
+          <div class="col-2 center-stuff">
             <img class="book-icon" src="img/book1.jpg">
-            <button type="button" class="btn btn-success">Success</button>
-            <button type="button" class="btn btn-light">Open Preview</button>
+            <button type="button" class="btn btn-success space-button">Want to Read</button>
+            <button type="button" class="btn btn-light space-button">Open Preview</button>
           </div>
           <div class="col-6">
             <h4>Recursion</h4>
@@ -52,9 +63,9 @@
                 Smith believes. Its why shes dedicated her life to creating a technology that will</p>
             <hr>
             <p>GET A COPY</p>
-            <button type="button" class="btn btn-light">Kindle Store $11.99</button>
-            <button type="button" class="btn btn-light">Amazon</button>
-            <button type="button" class="btn btn-light">Libraries</button>
+            <button type="button" class="btn btn-light" data-toggle="tooltop" data-placement="top" title="$14.99" id="tooltip1">Kindle Store</button>
+            <button type="button" class="btn btn-light" data-toggle="tooltop" data-placement="top" title="$12.99" id="tooltip2">Amazon</button>
+            <button type="button" class="btn btn-light" data-toggle="tooltop" data-placement="top" title="$15.99" id="tooltip3">Libraries</button>
             
 
           </div>
@@ -65,10 +76,10 @@
                     <img class="cont-book" src="img/book2.jpg">
                 </div>
                 <div class="col-3">
-                    <img class="cont-book" src="img/book2.jpg">
+                    <img class="cont-book" src="img/book3.jpg">
                 </div>
                 <div class="col-3">
-                    <img class="cont-book" src="img/book2.jpg">
+                    <img class="cont-book" src="img/book4.jpg">
                 </div>
                 
             </div>
@@ -78,10 +89,39 @@
       </div>
 </div>
 
+<footer class="bg-dark text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+          <h5>COMPANY</h5>
+          <p><a>About us</a></p>
+          <p><a>Careers</a></p>
+          <p><a>Terms</a></p>
+          <p><a>Privacy</a></p>
+          <p><a>Help</a></p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5>WORK WITH US</h5>
+        <p><a>Authors</a></p>
+        <p><a>Advertise</a></p>
+        <p><a>Authors & ads blog</a></p>
+        <p><a>API</a></p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+          <p>&copy; Brayden England 2020</p>
+      </div>
+  </div>
+  </div>
+</footer>
+
 
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/book.js"></script>
 
 </body>
 </html>

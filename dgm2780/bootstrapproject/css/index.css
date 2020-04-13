@@ -2,7 +2,6 @@
   clear: both;
 }
 nav {
-  float: left;
   color: #FF0000;
   font-family: Helvetica, sans-serif;
 }
@@ -22,10 +21,36 @@ nav ul li ul.sub-nav {
 /*# sourceMappingURL=main.css.map */
 nav {
   width: 100%;
+  margin-bottom: 25px;
+}
+p {
+  margin: 3px 0px;
 }
 .book-icon {
   width: 100%;
 }
+.rec-book {
+  width: 200px;
+}
 .cont-book {
   width: 100%;
+}
+footer {
+  padding: 10px;
+  margin-top: 25px;
+}
+.space-button {
+  margin-top: 7px;
+}
+.center-stuff {
+  text-align: center;
+}
+.space-top {
+  margin-top: 25px;
+}
+.book-list {
+  margin-top: 25px;
+}
+#hide {
+  display: none;
 }
