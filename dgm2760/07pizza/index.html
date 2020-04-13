@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>07 Pizza Emporium</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <!-- insert via javascript -->
+            <h1></h1>
+            <h2></h2>
+        </header>
+        <section>
+            <h1>What I learned</h1>
+            <ul>
+                <li>Getting values from radio inputs</li>
+                <li>Getting values from object properties inside object functions</li>
+            </ul>
+        </section>
+
+        <div class="app">
+            <h1>Crust Options</h1>
+            <div class="options">
+                <input type="radio" id="thin" name="crust" value="thin" checked>
+                <label for="thin">Thin</label>
+                <input type="radio" id="thick" name="crust" value="thick">
+                <label for="thick">Thick</label>
+            </div>
+
+            <h1>Topping Options</h1>
+            <div class="options">
+                <input type="radio" id="sausage" name="topping" value="sausage" checked>
+                <label for="sausage">Sausage</label>
+                <input type="radio" id="pepporoni" name="topping" value="pepporoni">
+                <label for="pepporoni">Pepporoni</label>
+            </div>
+
+            <h1>Size Options</h1>
+            <div class="options">
+                <input type="radio" id="small" name="size" value="small" checked>
+                <label for="small">Small</label>
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">Large</label>
+            </div>
+
+            <h1>Time to Eat</h1>
+            <button id="buildPizza">Build Pizza</button>
+            <h1>Shopping List</h1>
+            <button id="buildList">Shopping List</button>
+            <h1>Messages back to the user</h1>
+            <div class="output"></div>
+        </div>
+
+        <footer>
+            <p>&copy; 2020 Brayden England - DGM 2760</p>
+        </footer>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
