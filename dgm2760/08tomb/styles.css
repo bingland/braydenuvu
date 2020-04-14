@@ -1,0 +1,96 @@
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: rgb(48, 48, 48);
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #8d853c;
+    background-image: url('./img/header.jpeg');
+    background-position: 0 300px;
+    color: white;
+    text-shadow: 3px 3px 8px #000000a1;
+    padding: 20px;
+}
+header h1 {
+    font-size: 50px;
+    padding: 5px;
+}
+header h2 {
+    font-size: 25px;
+    padding: 5px;
+}
+
+section {
+    padding: 15px;
+}
+section h1 {
+    font-size: 30px;
+    padding: 5px;
+}
+section p {
+    font-size: 20px;
+    padding: 0 10px 10px 5px;
+}
+
+section ul {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgb(120, 139, 80);
+    padding: 45px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* app */
+.app {
+    max-width: 500px;
+    padding: 15px;
+}
+.text {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(120, 139, 80);
+    color: white;
+}
+button {
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: none;
+    background-color: rgb(156, 168, 130);
+    cursor: pointer;
+    color: white;
+}
+.console {
+    width: 100%;
+    font-size: 18px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+.correct {
+    background-color: green;
+    padding: 15px;
+}
+.incorrect {
+    background-color: red;
+    padding: 15px;
+}
