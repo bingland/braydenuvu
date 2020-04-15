@@ -1,0 +1,25 @@
+{
+    "hotels": [
+        {
+            "name": "Marriott",
+            "address": "949 Billington Ave",
+            "rooms": 50,
+            "types": ["King", "Queen", "Twin"],
+            "img": "https://q-cf.bstatic.com/images/hotel/max1024x768/681/68184730.jpg"
+        },
+        {
+            "name": "Sharaton",
+            "address": "400 S 200 W",
+            "rooms": 60,
+            "types": ["King", "Queen", "Double"],
+            "img": "https://ghc.anitab.org/wp-content/uploads/sites/2/2017/07/rosen-center-hotel-700x466.jpg"
+        },
+        {
+            "name": "Hilton",
+            "address": "Town St., Bacon Boulevard",
+            "rooms": 40,
+            "types": ["King", "Twin"],
+            "img": "https://media-cdn.tripadvisor.com/media/photo-s/10/00/09/a8/swimming-pool.jpg"
+        }
+    ]
+}
