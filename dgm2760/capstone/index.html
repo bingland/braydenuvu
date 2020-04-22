@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Bacon Ipsum</title>
+</head>
+<body>
+    
+    <div class="app">
+        <form>
+            <!-- all-meat or meat-and-filler -->
+            <input type="radio" id="all-meat" value="all-meat" name="type">
+            <label for="all-meat">All-Meat</label><br>
+            <input type="radio" id="meat-and-filler" value="meat-and-filler" name="type" checked>
+            <label for="meat-and-filler">Meat-and-Filler</label><br><br>
+
+            <!-- paragraphs -->
+            <label for="paragraphs">Paragraphs: </label>
+            <input type="text" id="paragraphs" name="paragraphs" maxlength="2"><br><br>
+
+            <!-- sentences -->
+            <label for="sentences">Sentences: (Overrides paragraphs) </label>
+            <input type="text" id="sentences" name="sentences" maxlength="2"><br><br>
+
+            <!-- start with lorem -->
+            <input type="checkbox" id="start-with-lorem" value="start with lorem" name="lorem">
+            <label for="lorem">Start with Lorem</label><br><br>
+
+            <input type="submit" value="Generate"><br><br>
+        </form>
+
+        <div class="output">
+            
+        </div>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
