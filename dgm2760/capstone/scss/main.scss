@@ -1,13 +1,21 @@
 @import "reset";
 
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+  min-height: 100%;
+  background: rgb(238,108,99);
+  background: linear-gradient(63deg, rgba(238,108,99,1) 0%, rgba(239,132,127,1) 100%);
+  background-repeat: no-repeat;
+}
 
 * { 
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
+$pink1: rgba(239,132,127,1);
+
 body {
-  //font
+  font-family: 'Lato', sans-serif;
 }
 
 .clearfix:after {
@@ -16,7 +24,94 @@ body {
   clear: both;
 }
 
-// .wrapper {
-//   max-width: 1200px;
-//   margin: 0 auto;
-// }
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.selection {
+  max-width: 500px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin: 50px auto;
+
+
+  form {
+    width: 100%;
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      padding-top: 10px;
+    }
+
+    label {
+      font-size: 20px;
+    }
+
+    .formSec {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: start;
+
+      .formDiv {
+        padding: 5px;
+        position: relative;
+
+        label {
+          font-size: 20px;
+        }
+        input[type="radio"] {
+          position: relative;
+          top: -3px;
+        }
+        input[type="text"] {
+          width: 40px;
+          font-size: 18px;
+          padding: 5px;
+          border-radius: 5px;
+          border: 1px solid rgb(167, 167, 167);
+        }
+      }
+    }
+    .formDiv2 {
+      padding: 5px 0;
+    }
+
+    #fullWidth {
+      width: 100%;
+      text-align: center;
+
+      input[type="submit"] {
+        background-color: $pink1;
+        border-radius: 10px;
+        color: white;
+        font-size: 30px;
+        padding: 5px 25px;
+        margin: 0 auto;
+        border: none;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.output {
+  background-color: rgba(255, 255, 255, 0.945);
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  line-height: 1.2;
+  
+  p {
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: light;
+  }
+}

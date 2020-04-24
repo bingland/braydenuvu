@@ -28,7 +28,6 @@ const getLorem = () => {
     if(all_meat.checked || meat_and_filler.checked) {
         settings.type = all_meat.checked ? 'all-meat' : 'meat-and-filler'
     } else {
-        console.log('both are unchecked!')
         settings.type = 'meat-and-filler'
     }
 
@@ -68,7 +67,6 @@ const getLorem = () => {
     if (settings.sentences != null) { link += `&sentences=${settings.sentences}` }
     if (settings.lorem != false) { link += `&start-with-lorem=1` }
 
-    console.log(link)
     try {
         fetch(link)
             .then((res) => {
