@@ -1,0 +1,95 @@
+// * header
+$headerTint: #E0DEDF;
+header {
+
+  .headerImage {
+      max-height: 750px; 
+      overflow: hidden;
+      img {
+
+      }
+  }
+
+  .headerText {
+    background-color: rgba(224, 222, 223, 0);
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    text-align: left;
+    margin-left: 5%;
+
+    h1 {
+      font-size: 44px;
+      max-width: 600px;
+    }
+    p {
+      max-width: 400px;
+      font-size: 18px;
+    }
+    button {
+      margin-left: 4%;
+    }
+  }
+}
+
+// * steps
+.steps {
+  padding-top: 40px;
+
+  .stepGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+}
+
+// * tri area
+.tri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .triPanel {
+
+    .triText {
+      padding: 20px;
+      height: 100%;
+      width: 80%;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      button {
+        width: 90%;
+      }
+    }
+  }
+}
+
+// * bi area
+.bi {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  max-width: 1100px;
+  margin: 40px auto;
+
+  .biPanel {
+    
+    
+    .biText {
+      
+
+      h2 {
+        
+      }
+      h3 {
+        
+      }
+      button {
+        
+      }
+    }
+  }
+}

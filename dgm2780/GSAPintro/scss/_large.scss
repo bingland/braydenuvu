@@ -1,0 +1,36 @@
+// * nav
+$navheight: 96px;
+nav {
+  height: $navheight;
+  .wrapper {
+    
+    grid-template-columns: auto auto 50px 50px;
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        li {
+            font-size: 18px;
+            color: $mainblue;
+        }
+    }
+
+    .logo {
+        display: grid;
+        align-items: center;
+        padding: 0;
+        img {
+            max-height: 45px;
+        }
+    }
+
+    .cart {
+        display: grid;
+        align-items: center;
+        margin-top: 20px;
+    }
+  }
+}
