@@ -108,11 +108,13 @@ const clickCard = (index) => {
 form.onsubmit = (e) => {
     e.preventDefault()
     query = input.value
+    page = 1
     load()
 }
 
 // default search
 defaultBtn.onclick = () => {
     query = defaultQuery
+    page = 1
     load()
 }
