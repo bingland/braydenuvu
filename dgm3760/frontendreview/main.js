@@ -8,9 +8,7 @@ const output = document.querySelector('#output')
 const input = document.querySelector('#cInput')
 const form = document.querySelector('#searchForm')
 const defaultBtn = document.querySelector('#defaultBtn')
-
-// access token US6hAHXoJtO5a7BM0xGQYiQJaxWvNr4Jvo
-// access token USppIO2Ut3DwM6d6tIY9MGXyit9ZAdT72m
+const accessToken = 'USWbsz7NLE6RRvIS4fnRl7UZQd6osL5Nqn'
 // curl -u {client_id}:{client_secret} -d grant_type=client_credentials https://us.battle.net/oauth/token
 // curl -u a19ed0f786f4495b98d0b6d249063806:FDbRUwO5ado8vUq6fwJ0P3UXPXx7y24u -d grant_type=client_credentials https://us.battle.net/oauth/token
 // client id a19ed0f786f4495b98d0b6d249063806
@@ -19,8 +17,8 @@ const defaultBtn = document.querySelector('#defaultBtn')
 const load = () => {
     let baseURL = 'https://us.api.blizzard.com/hearthstone/cards?locale=en_US'
     let params = `&textFilter=${query}&page=${page}`
-    let accessToken = '&access_token=USppIO2Ut3DwM6d6tIY9MGXyit9ZAdT72m'
-    let fullURL = baseURL + params + accessToken
+    let access = '&access_token=' + accessToken
+    let fullURL = baseURL + params + access
     console.log('%c ' + fullURL, 'font-weight: bold;')
 
     fetch(fullURL, {
